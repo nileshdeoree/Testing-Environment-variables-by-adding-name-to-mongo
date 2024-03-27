@@ -3,7 +3,7 @@ import connectDb from "../../middleware/mongoose"
 
 const handler = async (req, res) => {
 
-    let names = await Name.find()
+    let names = await Name.remove()
     res.json(names)
 }
 
